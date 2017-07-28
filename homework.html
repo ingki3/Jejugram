@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html, body{
+            margin : 0;
+            padding : 0;
+        }
+
+        body{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+
+            background-color: red;
+
+
+        }
+
+        .feed{
+            width: 1000px;
+            height: 600px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background-color: yellow;
+            border: 10px solid green;
+        }
+        .feed-child{
+            display: flex;
+
+            width : 60%;
+            height : 60%;
+            background-color: yellow;
+            border: 10px solid green;
+
+            display: flex;
+            flex-flow: row-reverse;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .feed-grandchild{
+            width: 100px;
+            height: 30px;
+            background-color: white;
+            border: 10px inset pink;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .different{
+            border: 10px outset pink;
+        }
+    /* HOMEWORK */
+    </style>
+</head>
+<body>
+    <div class="feed">
+        <div class="feed-child">
+            <div class="feed-grandchild">1</div>
+            <div class="feed-grandchild different">2</div>
+            <div class="feed-grandchild">3</div>
+        </div>
+    </div>
+</body>
+</html>
