@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+         <link rel="shortcut icon" href="images/favicon.ico">
+         <link rel="stylesheet" href="css/style.css">
+         <title>Edit Profile | Jejugram</title>
+    </head>
+    <body>
+        <nav>
+            <a href="feed.html">
+                <img src="images/logo.png" />
+            </a>
+            <input type="text" placeholder="Search">
+            <div>
+                <a href="explore.html" class="navigation_link"><i class="fa fa-compass"></i></a>
+                <a href="#" class="navigation_link"><i class="fa fa-heart-o"></i></a>
+                <a href="profile.html" class="navigation_link"><i class="fa fa-user-o"></i></a>
+            </div>
+        </nav>
+
+        <main id="edit_profile">
+            <div class="edit_profile">
+                <div class="edit_profile_user">
+                    <img src="images/users/hyeri.png" alt="">
+                    <span class="edit_profile_userName">
+                        #USER_NAME
+                    </span>
+                </div>
+                <form  action="profile.html" method="profile" class="edit_profile_form">
+                    <div class="edit_profile_row">
+                        <label for="name">
+                            Name
+                        </label>
+                        <input type="text" name="name">
+                    </div>
+                    <div class="edit_profile_row">
+                        <label for="username">
+                            Username
+                        </label>
+                        <input type="text" name="username">
+                    </div>
+                    <div class="edit_profile_row">
+                        <label for="website">
+                            Website
+                        </label>
+                        <input type="text" name="website">
+                    </div>
+                    <div class="edit_profile_row">
+                        <label for="bio">
+                            Bio
+                        </label>
+                        <input type="textarea" name="bio">
+                    </div>
+                    <div class="edit_profile_row">
+                        <label for="email">
+                            Website
+                        </label>
+                        <input type="email" name="email">
+                    </div>
+                    <div class="edit_profile_row">
+                        <label for="phonenumber">
+                            Phone Number
+                        </label>
+                        <input type="number" name="phonenumber">
+                    </div>
+                    <div class="edit_profile_row">
+                        <label for="gender">
+                            Gender
+                        </label>
+                        <select id="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="whatever">Not specified</option>
+                        </select>
+                    </div>
+                    <div class="edit_profile_row">
+                        <span class="edit_profile_label">
+                            Similar Account Suggestions
+                        </span>
+                        <input type="checkbox" id="similar" checked>
+                        <span class="edit_profile_suggestion">
+                            Include your account when recommending similar accounts people might want to follow.
+                            <a href="#">
+                                [?]
+                            </a>
+                        </span>
+                    </div>
+                    <div class="edit_profile_row">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+
+        </main>
+        <footer>
+            <nav class="footer_nav">
+                <ul class="footer_item">
+                    <li class="footer item"><a href="" class="footer_link">About us</a></li>
+                    <li class="footer item"><a href="" class="footer_link">Support</a></li>
+                    <li class="footer item"><a href="" class="footer_link">Blog</a></li>
+                    <li class="footer item"><a href="" class="footer_link">Press</a></li>
+                    <li class="footer item"><a href="" class="footer_link">Api</a></li>
+                    <li class="footer item"><a href="" class="footer_link">Jobs</a></li>
+                    <li class="footer item"><a href="" class="footer_link">Privacy</a></li>
+                    <li class="footer item"><a href="" class="footer_link">Terms</a></li>
+                    <li class="footer item"><a href="" class="footer_link">Directory</a></li>
+                    <li class="footer item"><a href="" class="footer_link">Language</a></li>
+                </ul>
+            </nav>
+            <span class="copy_right">
+                © 2017 Jejugram
+            </span>
+        </footer>
+    </body>
+</html>

@@ -7,7 +7,7 @@
          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
          <link rel="shortcut icon" href="images/favicon.ico">
          <link rel="stylesheet" href="css/style.css">
-         <title>Feed | Jejugram</title>
+         <title>Image Detail | Jejugram</title>
     </head>
     <body>
         <nav>
@@ -21,49 +21,33 @@
                 <a href="profile.html" class="navigation_link"><i class="fa fa-user-o"></i></a>
             </div>
         </nav>
-        <main id="feed">
-            <div class="photo">
-                <header class="photo_header">
-                    <img src="images/users/hyeri.png" alt="">
-                    <span class="photo_uploader">
-                        #PHOTO_UPLOADER
-                    </span>
+
+        <main id="image_detail">
+            <img src="" alt="">
+                <header class="image_detail">
+                    <div class="image_detail_profile">
+                        <img src="images/users/hyeri.png" alt="" />
+                        <span class="image_detail_profile_username">#USER_NAME</span>
+                        <span class="image_detail_profile_location">#LOCATION</span>
+                    </div>
                 </header>
-
-                <img src="images/instagram_logo.jpg" alt="#IMG">
-
-                <div class="photo_info">
-                    <div class="photo_actions">
-                        <span class="photo_actions_heart">
-                            <i class="fa fa-heart-o"></i>
-                        </span>
-                        <span class="photo_actions_comment">
-                            <i class="fa fa-comment-o"></i>
-                        </span>
-                    </div>
-                    <span class="photo_likes">
-                        #PHOTO_LIKES
+                <ul class="comment_list">
+                    <li>
+                        <span class="comment_writer">#COMMENT_WRITER</span>
+                        <span class="comment_contents">#COMMENT_CONTENTS</span>
+                        <i class="fa fa-times"></i>
+                    </li>
+                </ul>
+                <div class="image_detail_action">
+                    <i class="fa fa-heart-o"></i>
+                    <i class="fa fa-comment-o"></i>
+                    <span class="image_detail_likes_count">
+                        702 likes
                     </span>
-                    <ul class="photo_comment_list">
-                        <li class="photo_comment_item">
-                            <span class="photo_comment_writer">
-                                #writer
-                            </span>
-                            <span class="photo_comment_content">
-                                #comment
-                            </span>
-                        </li>
-                    </ul>
-                    <span class="photo_date">
-                        #PHOTO_DATE
+                    <span class="image_detail_upload_date">
+                        June 23, 2016
                     </span>
-                    <div class="photo_add_comment">
-                        <textarea placeholder="Add a comment...">
-                        </textarea>
-                        <i class="fa fa-ellipsis-h"></i>
-                    </div>
                 </div>
-            </div>
         </main>
         <footer>
             <nav class="footer_nav">
