@@ -8,12 +8,39 @@
 </head>
 <body>
   <main id="loglin">
-    <div class="login_column"></div>
-      <img src="images/phoneImage.png" />
     <div class="login_column">
-      <div class="login_box"></div>
-      <div class="login_box"></div>
-      <div class="login_t-box"></div>
+      <img src="images/phoneImage.png" />
+    </div>
+
+    <div class="login_column">
+      <div class="login_box">
+        <img src="images/loginLogo.png" />
+        <form action="feed.html" method="post" class="login_form">
+          <input type="text" name="username" placeholder="Username" required>
+          <input type="password" name="password" placeholder="Password" required>
+          <input type="submit" value="Log in">
+        </form>
+        <span class="login_diveder">
+          or
+        </span>
+        <a href="" class="login_fb_link">
+          Log in with Fcebook
+        </a>
+        <a href="" class="login_small_link">
+          Forget password?
+        </a>
+      </div>
+
+      <div class="login_box">
+        <span class="login_text">Don't have an account?</span>
+        <a href="http://www.instagram.com" class="login_blue_link">Sign up</a>
+      </div>
+
+      <div class="login_t-box">
+        <span class="login_text">Get the app</span>
+        <img src="images/ios.png" alt="appstore image" class="login_appstore">
+        <img src="images/android.png" alt="playstore image" class="login_appstore">
+      </div>
     </div>
   </main>
   <footer></footer>
