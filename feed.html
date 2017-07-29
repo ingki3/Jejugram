@@ -10,28 +10,36 @@
          <title>Feed | Jejugram</title>
     </head>
     <body>
-        <nav>
-            <a href="feed.html">
-                <img src="images/logo.png" />
-            </a>
-            <input type="text" placeholder="Search">
-            <div>
-                <a href="explore.html" class="navigation_link"><i class="fa fa-compass"></i></a>
-                <a href="#" class="navigation_link"><i class="fa fa-heart-o"></i></a>
-                <a href="profile.html" class="navigation_link"><i class="fa fa-user-o"></i></a>
+        <nav class="navigation">
+            <div class="navigation_box">
+                <a href="feed.html">
+                    <img src="images/logo.png" />
+                </a>
+                <input type="text" placeholder="Search">
+                <div class="navigation_links">
+                    <a href="explore.html" class="navigation_link"><i class="fa fa-compass"></i></a>
+                    <a href="#" class="navigation_link"><i class="fa fa-heart-o"></i></a>
+                    <a href="profile.html" class="navigation_link"><i class="fa fa-user-o"></i></a>
+                </div>
             </div>
         </nav>
         <main id="feed">
-            <div class="photo">
+            <div class="photo u-default-box">
                 <header class="photo_header">
-                    <img src="images/users/hyeri.png" alt="">
-                    <span class="photo_uploader">
-                        #PHOTO_UPLOADER
-                    </span>
+                    <img src="images/users/jpark.jpg" alt="" class="feed_profile_img">
+                    <div class="photo_meta">
+                        <span class="photo_uploader global_profile_font_style_1">
+                            JPark
+                        </span>
+                        <span class="photo_location global_profile_font_style_2">
+                            Muttville Senior Dog Rescue
+                        </span>
+                    </div>
                 </header>
 
-                <img src="images/instagram_logo.jpg" alt="#IMG">
-
+                <div class="photo_feed_img">
+                    <img src="images/instagram_logo.jpg" alt="#IMG">
+                </div>
                 <div class="photo_info">
                     <div class="photo_actions">
                         <span class="photo_actions_heart">
@@ -41,21 +49,21 @@
                             <i class="fa fa-comment-o"></i>
                         </span>
                     </div>
-                    <span class="photo_likes">
-                        #PHOTO_LIKES
+                    <span class="photo_likes global_profile_font_style_1">
+                        25 likes
                     </span>
                     <ul class="photo_comment_list">
                         <li class="photo_comment_item">
                             <span class="photo_comment_writer">
-                                #writer
+                                oneunju
                             </span>
                             <span class="photo_comment_content">
-                                #comment
+                                모델 하우스인거 같아요 놀러가고싶어요.
                             </span>
                         </li>
                     </ul>
                     <span class="photo_date">
-                        #PHOTO_DATE
+                        5 DAYS AGO
                     </span>
                     <div class="photo_add_comment">
                         <textarea placeholder="Add a comment...">

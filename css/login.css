@@ -1,15 +1,17 @@
 #login{
     width: 75%;
-    margin: 50px auto;
+    margin: 100px auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 900px;
+    max-width: 748px;
+    min-width: 748px;
 
     flex-wrap: nowrap;
 }
 
-@media only screen and (max-width: 900px) {
+
+@media only screen and (max-width: 748px) {
     .login_column:first-child {
         display: none;
     }
@@ -19,7 +21,18 @@
         top: 0px;
         left: 0px;
     }
+
+    #login{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        max-width: 400px;
+        min-width: 400px;
+    }
 }
+
+
 
 #login .login_column{
     width: 47%;
