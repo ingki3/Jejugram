@@ -5,6 +5,9 @@
 @import 'footer.css';
 @import 'navigation.css';
 @import 'explore.css';
+@import 'explore_iphone.css';
 @import 'feed.css';
 @import 'profile.css';
+@import 'profile_iphone.css';
 @import 'edit_profile.css';
+@import 'iphone.css';

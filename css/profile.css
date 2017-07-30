@@ -12,9 +12,9 @@
     justify-content: space-between;
 
     max-width: 936px;
-    width: calc(100% * 0.9);
 
-    margin-top: 0;
+
+    margin: 0 0 20px 0;
 
     padding-left: 70px;
 
@@ -22,7 +22,7 @@
 }
 
 .profile_header .profile_info {
-    width: 550px;
+    width: 100%;
 
     margin-bottom: 26px;
     display: flex;
@@ -45,7 +45,7 @@
 }
 
 .profile_stat {
-    width: 550px;
+    width: 100%;
     display: flex;
 }
 
@@ -93,6 +93,10 @@
     font-weight: 600;
 }
 
+#profile .profile_description {
+    width: 100%
+}
+
 #profile .profile_header p {
     width: 100%;
     font-size: 16px;
@@ -113,30 +117,95 @@
 
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .profile_image_grid .profile_photo_row {
-    width: 100%;
+    width: 90%;
+
     max-width: 295px;
+
+    margin-bottom: 20px;
+
 }
 
 .profile_image_grid .profile_photo_row img {
-    width: 100%;
+    width: 95%;
     min-width: 133px;
     max-width: 295px;
 }
 
-@media only screen and (max-width: 984px) {
-    .profile_image_grid .profile_photo_row {
-        width: calc(100% / 3);
+
+
+.profile_photo_overlay i.fa-heart:hover {
+    transform: scale(40);
+    color: red;
+    animation: 0.5s pump infinite linear;
+}
+
+.profile_photo_overlay i.fa-comment:hover {
+    transform: scale(40);
+    color: blue;
+    animation: 0.5s pump infinite linear;
+}
+
+.profile_info i.fa-cof:hover {
+    animation: 2.0s icon_rotate infinite linear;
+}
+
+@keyframes icon_rotate {
+    0% {
+        transform: none;
+    }
+    50% {
+        transform: rotateX(360deg);
+    }
+    100% {
+        transform: none;
     }
 }
 
-@media only screen and (max-width: 750px) {
-    .profile_image_grid .profile_photo_row {
-        width: calc(100% / 3);
+.profile_photo {
+  position: relative;
+}
+
+.phofile_photo .profile_overlay {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  opacity: 0;
+  transition: opacity .5s ease-in-out;
+}
+
+.profile_overlay .profile_photo_overlay {
+  font-weight: 600;
+  font-size: 18px;
+
+  transform: translateY(-20px);
+}
+
+.profile_overlay .profile_photo_overlay:first-child {
+  margin-right: 20px;
+}
+
+.phofile_photo:hover .profile_overlay {
+  opacity: 1;
+}
+
+@keyframes pump {
+    0% {
+        transform: none;
     }
-    .profile_photo{
-        display: none;
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: none;
     }
 }

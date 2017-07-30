@@ -1,0 +1,21 @@
+@media screen and (min-width: 320px) and (max-width:670px) {
+    main {
+        margin-top: 0;
+        width: 100%;
+    }
+    .explore_list {
+      width: 100%;
+      max-width: 670px;
+      background: white;
+    }
+    .explore_list_item {
+        border: none;
+    }
+    .explore_list:first-child {
+        border: none;
+    }
+
+    .explore_list:last-child {
+        border: none;
+    }
+}
