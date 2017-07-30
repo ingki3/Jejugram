@@ -1,0 +1,142 @@
+#profile {
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+#profile .profile_header {
+    display: flex;
+    justify-content: space-between;
+
+    max-width: 936px;
+    width: calc(100% * 0.9);
+
+    margin-top: 0;
+
+    padding-left: 70px;
+
+    box-sizing: border-box;
+}
+
+.profile_header .profile_info {
+    width: 550px;
+
+    margin-bottom: 26px;
+    display: flex;
+
+
+}
+
+.profile_header .profile_photo {
+    border-radius: 50%;
+    width: 152px;
+    height: 152px;
+
+    margin-right: 100px;
+}
+
+.profile_meta {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.profile_stat {
+    width: 550px;
+    display: flex;
+}
+
+#profile .profile_info h1 {
+    font-size: 32px;
+    color : #262626;
+    font-style: normal;
+
+    margin-right: 22px;
+}
+
+#profile .profile_info button {
+    width: 128px;
+    height: 28px;
+    border-radius: 2px;
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+
+    color: #262626;
+    font-size: 14px;
+    font-weight: 600;
+
+    margin-right: 10px;
+}
+
+#profile .profile_info i {
+    font-size: 22px;
+}
+
+#profile .profile_stat {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+#profile .profile_stat .profile_stat_label {
+    font-weight: 600;
+}
+
+#profile .profile_stat .profile_stat_number {
+    margin-right: 52px;
+}
+
+#profile .profile_description_name {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#profile .profile_header p {
+    width: 100%;
+    font-size: 16px;
+}
+
+.profile_description a {
+    font-weight: 600;
+    color: #003569;
+}
+
+.profile_description a:visited {
+    color: #003569;
+}
+
+.profile_image_grid {
+    max-width: 936px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.profile_image_grid .profile_photo_row {
+    width: 100%;
+    max-width: 295px;
+}
+
+.profile_image_grid .profile_photo_row img {
+    width: 100%;
+    min-width: 133px;
+    max-width: 295px;
+}
+
+@media only screen and (max-width: 984px) {
+    .profile_image_grid .profile_photo_row {
+        width: calc(100% / 3);
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .profile_image_grid .profile_photo_row {
+        width: calc(100% / 3);
+    }
+    .profile_photo{
+        display: none;
+    }
+}

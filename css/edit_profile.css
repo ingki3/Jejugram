@@ -1,0 +1,109 @@
+#edit-profile {
+  display: flex;
+  justify-content: center;
+}
+
+.edit-profile__header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 34px;
+}
+.edit-profile__header .edit-profile__username {
+    font-size: 24px;
+}
+
+.edit-profile__header img {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+}
+
+.edit-profile__header .fucker-container {
+  margin-right: 20px;
+  width: 120px;
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.edit-profile__container {
+  padding: 35px;
+  box-sizing: border-box;
+}
+
+.edit-profile__row {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 16px;
+}
+
+.edit-profile__row .edit-profile__label {
+  width: 120px;
+  text-align: right;
+  margin-right: 20px;
+
+  font-size: 16px;
+  weight: 600;
+}
+
+.edit-profile__row input {
+    outline: none;
+    height: 30px;
+    width: 70%;
+
+    border-radius: 2px;
+    border: 1px solid #efefef;
+
+    padding: 0 15px 0 10px;
+
+    font-size: 16px;
+}
+
+.edit-profile__row textarea {
+    outline: none;
+    height: 60px;
+    width: 70%;
+
+    border-radius: 2px;
+    border: 1px solid #efefef;
+    resize: vertical;
+
+    padding: 5px 15px 0 10px;
+    font-size: 16px;
+}
+
+.edit-profile__row_checkbox {
+    width: 70%;
+    font-size: 16px;
+
+    display: flex;
+}
+
+.edit-profile__row_checkbox input {
+    width: 18px;
+    margin-right: 14px;
+
+    box-sizing: border-box;
+}
+
+.edit-profile__row select {
+        height: 30px;
+        width: 150px;
+        font-size: 16px;
+        color: #999999;
+}
+
+.edit-profile__row input[type="submit"] {
+    width: 100px;
+    height: 30px;
+
+    background-color: #3897f0;
+    border: 0;
+    border-radius: 2px;
+
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+}

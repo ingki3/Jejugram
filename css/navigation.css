@@ -47,9 +47,4 @@
     .navigation input {
         display: none;
     }
-
-    .login_column:nth-child(2) {
-        position: sticky;
-        top: 0px;
-        left: 0px;
-    }
+}
